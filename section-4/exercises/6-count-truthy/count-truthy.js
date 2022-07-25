@@ -17,36 +17,28 @@
 //   console.log("Hello");
 // }
 
-countTruthy(["", false, true, "banana", 0, undefined]);
+const array = ["", false, true, "banana", 0, undefined];
+countTruthy(array);
 
 function countTruthy(array) {
+  const newArray = [];
   for (let i in array) {
     if (array[i]) {
-      const count = array[i];
-      const newArray = [];
-      console.log(newArray);
+      // const count = array[i];
+      newArray.push(array[i]);
     }
   }
+  console.log(newArray.length);
 }
 
-// function countTruthy(array) {
-//   const count = [];
-//   for (const index of array) {
-//     // let value = array[index];
-//     if (count[index]) {
-//       count[element];
-//       // continue;
-//     }
-//     // console.log(index, array[index]);
-//     // index++;
-//     console.log(count);
-//   }
-// }
-
-// function countTruthy(array) {
-//   for (let index in array) {
-//     console.log(index, array[index]);
-//   }
-// }
-
 // ** Their solution **
+
+// const array = [0, null, undefined, "", 2, 3];
+
+// console.log(countTruthy(array));
+
+// function countTruthy(array) {
+//   let count = 0;
+//   for (let value of array) if (value) count++;
+//   return count;
+// }

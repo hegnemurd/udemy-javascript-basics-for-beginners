@@ -1,3 +1,0 @@
-// ** My solution **
-
-// ** Their solution **

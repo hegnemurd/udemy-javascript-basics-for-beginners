@@ -11,20 +11,38 @@
 // if comes back true, then nothing is returned
 // then continue to the next number
 
+// ** Separating all the pieces of the function into separate functions **
+
 showPrimes(20);
 
 function showPrimes(limit) {
-  for (let i = 0; i <= limit; i++) {
-    if (i / 1 && i / i) {
-      for (let index = 2; index <= i; index++) {
-        if (i / index !== 0) {
-          console.log(i);
-        } else {
-          continue;
-        }
-      }
-    }
+  for (let number = 2; number <= limit; number++) {
+    if (isPrime(number)) console.log(number);
   }
 }
 
+function isPrime(number) {
+  for (let factor = 2; factor < number; factor++) {
+    if (number % factor === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
 // ** Their solution **
+
+// showPrimes(20);
+
+// function showPrimes(limit) {
+//   for (let number = 2; number <= limit; number++) {
+//     let isPrime = true;
+//     for (let factor = 2; factor < number; factor++) {
+//       if (number % factor === 0) {
+//         isPrime = false;
+//         break;
+//       }
+//     }
+//     if (isPrime) console.log(number);
+//   }
+// }

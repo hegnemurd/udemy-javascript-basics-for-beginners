@@ -72,12 +72,12 @@
 
 // ----- FUNCTIONS ARE OBJECTS -----
 
-function Circle(radius) {
-  this.radius = radius;
-  this.draw = function () {
-    console.log("draw");
-  };
-}
+// function Circle(radius) {
+//   this.radius = radius;
+//   this.draw = function () {
+//     console.log("draw");
+//   };
+// }
 
 // const Circle1 = new Function(
 //   "radius",
@@ -91,15 +91,42 @@ function Circle(radius) {
 
 // const circle = new Circle1(1)
 
-Circle.call({}, 1);
+// Circle.call({}, 1);
 // if multiple arguments: Circle.call({}, 1, 2, 3, ..);
 
 // if multiple arguments then can add as an array
 // Circle.apply({}, [1, 2, 3]);
 
-const another = new Circle(1);
+// const another = new Circle(1);
 
 // write in console
 //      Circle.name
 //      Circle.length
 //      Circle.constructor
+
+// ----- VALUE VS REFERENCE TYPES -----
+
+// ----- Value (also called Primitives)
+// Number, String, Boolean, Symbol, undefined, null
+// Primitives are copied by their value!!!
+
+// x and y are independent
+
+// let x = 10; // x = 10
+// let y = x; // y = 10
+
+// x = 20; // x = 20, but y = 10
+
+// ----- Reference
+// Object, Function, Array
+// Objects are copied by their reference!!!
+
+// when the information is stored in an object, the value can change
+// as y copies over the object not the value itself inside the object
+// as the value changes in the object the y takes the new changed value
+// x and y both equal { value: 10 } or {whatever is inside this object}
+
+let x = { value: 10 };
+let y = x;
+
+x.value = 20;

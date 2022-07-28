@@ -44,7 +44,18 @@
 // }
 
 // const circle = new Circle(1);
-// // const x = {}; 
+// // const x = {};
 
 // ----- DYNAMIC NATURE OF OBJECTS -----
 
+// const circle = {
+//   radius: 1,
+// };
+
+// circle.colour = "yellow";
+// circle.draw = function () {};
+
+// delete circle.colour;
+// delete circle.draw;
+
+// console.log(circle);

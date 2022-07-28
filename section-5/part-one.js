@@ -64,8 +64,42 @@
 
 // this references the function that was used to construct or create the object
 
-let x = {}; // let x = new Object();
+// let x = {}; // let x = new Object();
 
-new String(); // '', "", ``
-new Boolean(); // true, false
-new Number(); // 1, 2, 3, ...
+// new String(); // '', "", ``
+// new Boolean(); // true, false
+// new Number(); // 1, 2, 3, ...
+
+// ----- FUNCTIONS ARE OBJECTS -----
+
+function Circle(radius) {
+  this.radius = radius;
+  this.draw = function () {
+    console.log("draw");
+  };
+}
+
+// const Circle1 = new Function(
+//   "radius",
+//   `
+// this.radius = radius;
+// this.draw = function() {
+//   console.log("draw");
+// };
+// `
+// );
+
+// const circle = new Circle1(1)
+
+Circle.call({}, 1);
+// if multiple arguments: Circle.call({}, 1, 2, 3, ..);
+
+// if multiple arguments then can add as an array
+// Circle.apply({}, [1, 2, 3]);
+
+const another = new Circle(1);
+
+// write in console
+//      Circle.name
+//      Circle.length
+//      Circle.constructor

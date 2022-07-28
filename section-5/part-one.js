@@ -59,3 +59,13 @@
 // delete circle.draw;
 
 // console.log(circle);
+
+// ----- CONSTRUCTOR PROPERTY -----
+
+// this references the function that was used to construct or create the object
+
+let x = {}; // let x = new Object();
+
+new String(); // '', "", ``
+new Boolean(); // true, false
+new Number(); // 1, 2, 3, ...

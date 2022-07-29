@@ -148,24 +148,3 @@
 
 // increase(obj);
 // console.log(obj); // in the console the value for the object will be 11, since it has been incremented by the function
-
-// ----- ENUMERATING PROPERTIES OF AN OBJECT -----
-
-const circle = {
-  radius: 1,
-  draw() {
-    console.log("draw");
-  },
-};
-
-for (let key in circle) {
-  console.log(key, circle[key]);
-}
-
-// for (let key of circle) { // not iterable
-//   console.log(key);
-// }
-
-for (let key of Object.keys(circle)) {
-  console.log(key);
-}

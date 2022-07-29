@@ -126,7 +126,25 @@
 // as the value changes in the object the y takes the new changed value
 // x and y both equal { value: 10 } or {whatever is inside this object}
 
-let x = { value: 10 };
-let y = x;
+// let x = { value: 10 };
+// let y = x;
 
-x.value = 20;
+// x.value = 20;
+
+// let number = 10;
+
+// function increase(number) {
+//   number++; // this number is indepenedent copy from the number we defined outside this function
+// }
+
+// increase(number);
+// console.log(number); // in the console it is the value 10
+
+// let obj = { value: 10 };
+
+// function increase(obj) { // the obj called references to the obj object that was created prior to the function and uses the value from that said object
+//   obj.value++;
+// }
+
+// increase(obj);
+// console.log(obj); // in the console the value for the object will be 11, since it has been incremented by the function

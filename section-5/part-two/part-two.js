@@ -63,4 +63,23 @@
 
 // ----- MATH -----
 
+// console.log("Here is a random number generated with Math.random():");
+// console.log(Math.random());
 
+// console.log(
+//   "Here is a random number between 4 and 140 with a function: randomNumberGenerator(4, 140)"
+// );
+// function randomNumberGenerator(min, max) {
+//   return Math.random() * (max - min) + min;
+// }
+
+// console.log(randomNumberGenerator(4, 140));
+
+// console.log("Here is a rounded number by using Math.round(1.9):");
+// console.log(Math.round(1.9));
+
+// console.log("Here is a max number by using Math.max(1, 13, 27, 2, 23, 11):");
+// console.log(Math.max(1, 13, 27, 2, 23, 11));
+
+// console.log("Here is a min number by using Math.min(1, 13, 27, 2, 23, 11):");
+// console.log(Math.min(1, 13, 27, 2, 23, 11));

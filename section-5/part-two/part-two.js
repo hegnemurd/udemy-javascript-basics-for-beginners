@@ -86,61 +86,105 @@
 
 // ----- STRING -----
 
+// // String Object is typeof object
+// const another = new String("hi");
+
 // String Primitive is typeof string
-const message = "This is my first message";
+// const message = "This is my first message";
 
-console.log(message);
+// console.log(message);
 
-console.log("message.length returns:");
-console.log(message.length);
+// console.log("message.length returns:");
+// console.log(message.length);
 
-console.log("message[8] returns:");
-console.log(message[8]);
+// console.log("message[8] returns:");
+// console.log(message[8]);
 
-console.log("message.includes('my') returns:");
-console.log(message.includes("my"));
+// console.log("message.includes('my') returns:");
+// console.log(message.includes("my"));
 
-console.log("message.includes('not') returns:");
-console.log(message.includes("not"));
+// console.log("message.includes('not') returns:");
+// console.log(message.includes("not"));
 
-console.log("message.startsWith('This') returns:");
-console.log(message.startsWith("This"));
+// console.log("message.startsWith('This') returns:");
+// console.log(message.startsWith("This"));
 
-console.log("message.startsWith('this') returns:");
-console.log(message.startsWith("this"));
+// console.log("message.startsWith('this') returns:");
+// console.log(message.startsWith("this"));
 
-console.log("message.indexOf('my') returns:");
-console.log(message.indexOf("my"));
+// console.log("message.indexOf('my') returns:");
+// console.log(message.indexOf("my"));
 
-console.log("message.replace('first', 'second) returns:");
-console.log(message.replace("first", "second"));
+// console.log("message.replace('first', 'second) returns:");
+// console.log(message.replace("first", "second"));
 
-console.log("message.toUpperCase() returns:");
-console.log(message.toUpperCase());
+// console.log("message.toUpperCase() returns:");
+// console.log(message.toUpperCase());
 
-const longMessage = " This is my long message ";
+// const longMessage = " This is my long message ";
+
+// console.log(
+//   "This is the second message with a space in beginning and at the end on the string:"
+// );
+// console.log(longMessage);
+
+// console.log("message.trim() returns:");
+// console.log(longMessage.trim());
+
+// console.log("message.trimLeft() returns:");
+// console.log(longMessage.trimLeft());
+
+// const quotationMessage = 'This is my "quotation" message';
+// console.log("Using escape notation in quotationMessage returns:");
+// console.log(quotationMessage);
+
+// const newLineMessage = 'This is my \n "quotation" message';
+// console.log("Using new line returns:");
+// console.log(newLineMessage);
+
+// console.log("newLineMessage.split('') returns:");
+// console.log(newLineMessage.split(" "));
+
+// ----- TEMPLATE LITERALS -----
+
+// console.log("writing 'This is my \\n first message' returns:");
+// const message = "This is my \n first message";
+
+// const longMessage = "This is my\n" + "first message";
+// console.log(`Writing in the code -
+// const message =
+// 'This is my \\n' +
+// 'first message' returns:`);
+// console.log(longMessage);
+
+// // Object {}
+// // Boolean true, false
+// // String '', " "
+// // Template ` `
+// const another = `This is my
+// "first" message`;
+
+// console.log(`Writing in the code -
+// const another =
+// \`This is my
+// "first" message\`
+// `);
+// console.log(another);
+
+// Ability to use placeholders, functions and any other experssions in template literals
 
 console.log(
-  "This is the second message with a space in beginning and at the end on the string:"
+  "Using ${name} expression to add the names to the string, this returns:"
 );
-console.log(longMessage);
 
-console.log("message.trim() returns:");
-console.log(longMessage.trim());
+const helloName = "John";
+const byeName = "Jane";
 
-console.log("message.trimLeft() returns:");
-console.log(longMessage.trimLeft());
+const another = `Hi ${helloName},
 
-const quotationMessage = 'This is my "quotation" message';
-console.log("Using escape notation in quotationMessage returns:");
-console.log(quotationMessage);
+Thank you for joining my mailing list.
 
-const newLineMessage = 'This is my \n "quotation" message';
-console.log("Using new line returns:");
-console.log(newLineMessage);
+Regards,
+${byeName}`;
 
-console.log("newLineMessage.split('') returns:");
-console.log(newLineMessage.split(" "));
-
-// String Object is typeof object
-const another = new String("hi");
+console.log(another);

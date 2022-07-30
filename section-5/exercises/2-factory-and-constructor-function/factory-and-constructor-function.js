@@ -1,26 +1,26 @@
 // ----- MY SOLUTION -----
 
-// // let address = {
-// //   street: "a",
-// //   city: "b",
-// //   zipCode: "c",
-// // };
+// let address = {
+//   street: "a",
+//   city: "b",
+//   zipCode: "c",
+// };
 
-// let address = new ConstructorAddress();
-// let address2 = factoryAddress();
+let address = new ConstructorAddress();
+let address2 = factoryAddress();
 
-// function factoryAddress() {
-//   let address = {
-//     street: "Street",
-//     city: "City",
-//     zipCode: "ZipCode",
-//   };
-//   return address;
-// }
+function factoryAddress() {
+  let address = {
+    street: "Street",
+    city: "City",
+    zipCode: "ZipCode",
+  };
+  return address;
+}
 
-// function ConstructorAddress() {
-//   (this.street = "Street"), (this.city = "City"), (this.zipCode = "ZipCode");
-// }
+function ConstructorAddress() {
+  (this.street = "Street"), (this.city = "City"), (this.zipCode = "ZipCode");
+}
 
 // ----- THEIR SOLUTION -----
 

@@ -171,20 +171,31 @@
 // `);
 // console.log(another);
 
-// Ability to use placeholders, functions and any other experssions in template literals
+// // Ability to use placeholders, functions and any other experssions in template literals
 
-console.log(
-  "Using ${name} expression to add the names to the string, this returns:"
-);
+// console.log(
+//   "Using ${name} expression to add the names to the string, this returns:"
+// );
 
-const helloName = "John";
-const byeName = "Jane";
+// const helloName = "John";
+// const byeName = "Jane";
 
-const another = `Hi ${helloName},
+// const another = `Hi ${helloName},
 
-Thank you for joining my mailing list.
+// Thank you for joining my mailing list.
 
-Regards,
-${byeName}`;
+// Regards,
+// ${byeName}`;
 
-console.log(another);
+// console.log(another);
+
+// ----- DATE -----
+
+// const now = new Date();
+// const date1 = new Date("May 11 2018 09:00");
+// const date2 = new Date(2018, 4, 11, 9);
+
+// now.setFullYear(2017);
+// console.log(now.toDateString());
+// console.log(now.toTimeString());
+// console.log(now.toISOString());

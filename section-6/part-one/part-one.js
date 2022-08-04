@@ -53,11 +53,28 @@
 
 // ----- ARROW FUNCTIONS -----
 
-const courses = [
-  { id: 1, name: "a" },
-  { id: 2, name: "b" },
-];
+// const courses = [
+//   { id: 1, name: "a" },
+//   { id: 2, name: "b" },
+// ];
 
-const course = courses.find((course) => course.name === "b");
+// const course = courses.find((course) => course.name === "b");
 
-console.log(course);
+// console.log(course);
+
+// ----- REMOVING ELEMENTS -----
+
+// const numbers = [1, 2, 3, 4];
+
+// removing element from the end
+// const last = numbers.pop();
+// console.log(numbers);
+// console.log(last);
+
+// removing element from the beginning
+// const first = numbers.shift();
+// console.log(first);
+
+// removing element from the middle
+// numbers.splice(1, 2);
+// console.log(numbers);

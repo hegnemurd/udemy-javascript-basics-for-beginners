@@ -102,3 +102,33 @@
 
 // console.log(numbers);
 // console.log(another);
+
+// ----- COMBINING AND SLICING ARRAYS -----
+
+// // --- primitive values wil lhave primitive values are copied over
+
+// const first = [1, 2, 3];
+// const second = [4, 5, 6];
+
+// const combined = first.concat(second);
+
+// // const slice = combined.slice(2, 4);
+// // const slice = combined.slice(2);
+// const slice = combined.slice();
+
+// console.log(combined);
+// console.log(slice);
+
+// // --- with objects the references are copied and not the object -
+// // they will still reference to the same original object
+
+// const first = [{ id: 1 }];
+// const second = [4, 5, 6];
+
+// const combined = first.concat(second);
+// first[0].id = 10;
+
+// const slice = combined.slice();
+
+// console.log(combined);
+// console.log(slice);

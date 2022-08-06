@@ -78,3 +78,27 @@
 // removing element from the middle
 // numbers.splice(1, 2);
 // console.log(numbers);
+
+// ----- EMPTYING AN ARRAY -----
+
+// let numbers = [1, 2, 3, 4];
+// let another = numbers;
+
+// // Solution 1 - best
+// // numbers will be garbage collected, if adding another variable to point to this array then it will not be garbage collected
+// numbers = [];
+
+// // Solution 2 - best
+// // both arrays are equal to 0
+// numbers.length = 0;
+
+// // Solution 3 - less favoured
+// // both arrays are empty
+// numbers.splice(0, numbers.length);
+
+// // Solution 4 - less favoured
+// // not recommended, when using an array with many elements - it keeps calling pop every single time
+// while (numbers.length > 0) numbers.pop();
+
+// console.log(numbers);
+// console.log(another);

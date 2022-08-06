@@ -132,3 +132,17 @@
 
 // console.log(combined);
 // console.log(slice);
+
+// ----- THE SPREAD OPERATOR -----
+
+// const first = [1, 2, 3];
+// const second = [4, 5, 6];
+
+// // const combined = first.concat(second);
+// // const combined = [...first, ...second];
+// const combined = ["a", ...first, "b", ...second, "c"]; // can add element to the beginning, middle and end of the combined array if wanted to
+
+// // const copy = combined.slice();
+// const copy = [...combined];
+
+// console.log(copy);

@@ -52,3 +52,19 @@
 //   return 0;
 // });
 // console.log(courses);
+
+// ----- TESTING THE ELEMENTS OF AN ARRAY -----
+
+// const numbers = [1, -1, 2, 3];
+
+// // every() checks if all are positive numbers, if one is negative then it will return false
+// // const allPositive = numbers.every(function (value) {
+// //   return value >= 0;
+// // });
+
+// // some() checks if atleast one positive number is in the array, if so then will return true, if all are negative then it will return false
+// const atLeastOnePositive = numbers.some(function (value) {
+//   return value >= 0;
+// });
+
+// console.log(atLeastOnePositive);

@@ -106,3 +106,27 @@
 
 // // console.log(items);
 // // console.log(html);
+
+// ----- REDUCING AN ARRAY -----
+
+// const numbers = [1, -1, 2, 3];
+
+// // let sum = 0;
+// // for (let n of numbers) sum += n;
+
+// // a = 0, cV = 1 => a = 1
+// // a = 1, cV = -1 => a = 0
+// // a = 0, cV = 2 => a = 2
+// // a = 2, cV = 3 => a = 5
+// // const sum = numbers.reduce((accumulator, currentValue) => {
+// //   return accumulator + currentValue;
+// // }, 0);
+
+// // a = 1, cV = -1 => a = 0
+// // a = 0, cV = 2 => a = 2
+// // a = 2, cV = 3 => a = 5
+// const sum = numbers.reduce(
+//   (accumulator, currentValue) => accumulator + currentValue
+// );
+
+// console.log(sum);

@@ -7,12 +7,19 @@ const output = except(numbers, [1]);
 console.log(output);
 
 function except(array, excluded) {
-  for (let i = 0; i <= array.length; i++) {
-    if (array === excluded) {
-      array.splice(array[i], 1);
+  let arrayLength = array.length;
+  let excludedLength = excluded.length;
+  let newArray = [];
+  for (let index = 0; index <= excludedLength; index++) {
+    for (let i = 0; i <= arrayLength; i++) {
+      if (array[i] !== excluded[index]) {
+        // newArray.splice(array[i], 1);
+        newArray.push(array[i]);
+        // break;
+      }
     }
   }
-  return array;
+  return newArray;
 }
 
 // ----- THEIR SOLUTION-----

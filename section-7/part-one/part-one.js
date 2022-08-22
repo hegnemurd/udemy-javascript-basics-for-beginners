@@ -23,20 +23,22 @@
 
 // ----- HOISTING -----
 
-// Function Declaration
+// // Function Declaration
 
-walk();
+// walk();
 
-function walk() {
-  console.log("walk");
-}
+// function walk() {
+//   console.log("walk");
+// }
 
-// Function Expressions
-// console.log(x);
-// let x = 1;
+// // Function Expressions
+// // console.log(x);
+// // let x = 1;
 
-run();
+// run();
 
-const run = function () {
-  console.log("run");
-};
+// const run = function () {
+//   console.log("run");
+// };
+
+// ----- ARGUMENTS -----

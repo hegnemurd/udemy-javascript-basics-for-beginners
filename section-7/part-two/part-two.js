@@ -102,3 +102,66 @@
 // function sayHi() {
 //   console.log("Hi");
 // } // functions are added to the window object as well, window.sayHi() => "Hi" OR window.sayHi => sayHi function
+
+// ----- THE "THIS" KEYWORD -----
+
+// inside method -> obj
+
+// const video = {
+//   title: "a",
+//   play() {
+//     console.log(this);
+//   },
+// };
+
+// video.stop = function () {
+//   console.log(this);
+// };
+
+// video.stop();
+
+// inside function -> global (window, global)
+
+// const video = {
+//   title: "a",
+//   play() {
+//     console.log(this);
+//   },
+// };
+
+// function playVideo() {
+//   console.log(this);
+// }
+// playVideo(); // will return the window/global object
+
+// function Video(title) {
+//   this.title = title;
+//   console.log(this);
+// }
+// const v = new Video("b"); // returns the new object
+
+// const video = {
+//   title: "a",
+//   tags: ["a", "b", "c"],
+//   showTags() {
+//     this.tags.forEach(function (tag) {
+//       // references the video object
+//       console.log(this.title, tag);
+//       // references the global object
+//     });
+//   },
+// };
+
+// Solving the issue above to ensure both "this" keywords reference the same object
+
+// const video = {
+//   title: "a",
+//   tags: ["a", "b", "c"],
+//   showTags() {
+//     this.tags.forEach(function (tag) {
+//       console.log(this.title, tag);
+//     }, this);
+//   },
+// };
+
+// video.showTags();

@@ -165,3 +165,61 @@
 // };
 
 // video.showTags();
+
+// ----- CHANGING "THIS" -----
+
+// const video = {
+//   title: "a",
+//   tags: ["a", "b", "c"],
+//   showTags() {
+//     const self = this;
+//     this.tags.forEach(function (tag) {
+//       console.log(self.title, tag);
+//     });
+//   },
+// };
+
+// video.showTags();
+
+// Better approach
+
+// const video = {
+//   title: "a",
+//   tags: ["a", "b", "c"],
+//   showTags() {
+//     this.tags.forEach(
+//       function (tag) {
+//         console.log(this.title, tag);
+//       }.bind(this)
+//     );
+//   },
+// };
+
+// Modern approach is to use arrow functions: 
+
+// const video = {
+//   title: "a",
+//   tags: ["a", "b", "c"],
+//   showTags() {
+//     this.tags.forEach((tag) => {
+//       console.log(this.title, tag);
+//     });
+//   },
+// };
+
+// video.showTags();
+
+// More solutions:
+
+// function playVideo() {
+//   console.log(this);
+// }
+
+// playVideo.call({ name: "Jane Doe" }, 1, 2); // multiple arguments can be separated with a coma
+// playVideo.apply({ name: "Jane Doe" }, [1, 2]); // multiple arguments to be passed in an array
+
+// // const func = playVideo.bind({ name: "Jane Doe" }); // returns a new function
+// // func();
+// playVideo.bind({ name: "Jane Doe" })(); // shorter way of calling the function above
+
+// playVideo();
